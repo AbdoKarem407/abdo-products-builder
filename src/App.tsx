@@ -8,7 +8,10 @@ function App() {
     <>
     
 
-      <h1>Abdo karem انا المعلم مين انت</h1>
+      <h1 className="text-red-500 text-3xl font-bold">
+  Tailwind شغال 🔥
+</h1>
+
     </>
   )
 }
