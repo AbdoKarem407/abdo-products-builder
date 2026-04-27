@@ -1,6 +1,6 @@
 import {v4 as uuid} from "uuid";
 import type { IProduct } from "../interfaces";
-import { Description, Label } from "@headlessui/react";
+
 
 export const data : IProduct[] = [
     {
@@ -128,29 +128,35 @@ export const data : IProduct[] = [
 
 ]
 
+interface IFormInput {
+  id: string
+  name: string
+  label: string
+  type: string
+}
 export const formInputsList: IFormInput[] = [
- { id: "title", 
-  name:"title",
-  label:"Product Title",
-  type:"text",
- },
- {
-  id:"description",
-  name:"description",
-  label:"Product Description",
-  type:"text",
- },
- {
-  id: "image",
-  name:"imageURL",
-  label:"Product Image URL",
-  type:"text",
- },
- {
-  id:"price",
-  name:"price",
-  label:"Product Price",
-  type:"text",
-
- }
+  {
+    id: "title",
+    name: "title",
+    label: "Product Title",
+    type: "text",
+  },
+  {
+    id: "description",
+    name: "description",
+    label: "Product Description",
+    type: "text",
+  },
+  {
+    id: "image",
+    name: "imageURL",
+    label: "Product Image URL",
+    type: "text",
+  },
+  {
+    id: "price",
+    name: "price",
+    label: "Product Price",
+    type: "text",
+  }
 ]
